@@ -12,7 +12,8 @@ console.log(c * b);
 
 let meaningOfLife: number;
 let isLoading: boolean;
-let album: any;
+// use | to inform TS this is a union type
+let album: string | number;
 
 meaningOfLife = 42;
 isLoading = true;
@@ -24,3 +25,9 @@ album = 1984;
 const sum = (c: number, d: number) => {
     return c + d;
 };
+
+let postId: string | number
+// It's not limit to only one or two data types
+let isActive: number | boolean | string
+// regular expression type
+let re: RegExp = /\w+/g
