@@ -100,15 +100,15 @@ const exampleObj = {
 // Because the type of prop1 was assigned with type
 exampleObj.prop1 = "Benny"
 
-type Guitarist = {
-    name: string,
-    //only in Type Object definition can add a question mark behind
-    //attributes to define it to be the following type or undefined
-    //optional
-    active?: boolean,
-    // an array of union type of string and number only
-    albums: (string | number)[]
-}
+// type Guitarist = {
+//     name: string,
+//     //only in Type Object definition can add a question mark behind
+//     //attributes to define it to be the following type or undefined
+//     //optional
+//     active?: boolean,
+//     // an array of union type of string and number only
+//     albums: (string | number)[]
+// }
 
 
 let evh: Guitarist = {
