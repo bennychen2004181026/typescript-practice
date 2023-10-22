@@ -162,3 +162,23 @@ const greetMember = (member1: Member) => {
     //const greetMember: (member1: Member) => string | undefined
     return 'Hello'
 }
+
+//Enum
+// In TypeScript, an enum (short for "enumeration") is a special way
+// to create named constants. It is essentially a custom data type that
+// you can define, allowing you to use human-readable names for sets of
+// numeric or string values. Using enum makes it easier to document intent
+// or create a set of distinct cases. This can be particularly useful in a 
+// project that involves lots of set values, where you'd like to ensure that 
+// variables have one of a small set of possible values.
+
+enum Grade {
+    //U defalut by 0 because of index,if apply an integer,the following will adopt too
+    U = 1,
+    D,
+    C,
+    B,
+    A
+}
+// result is 5
+console.log(Grade.A)
